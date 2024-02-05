@@ -405,7 +405,7 @@ if (!fullscreenEnabled()) {
 // First render is called in init()
 function renderApp(state) {
 	const pauseBtnIcon = `#icon-${state.paused ? 'play' : 'pause'}`;
-	const soundBtnIcon = `#icon-sound-${soundEnabledSelector() ? 'off' : 'on'}`;
+	const soundBtnIcon = `#icon-sound-${soundEnabledSelector() ? 'on' : 'off'}`;
 	appNodes.pauseBtnSVG.setAttribute('href', pauseBtnIcon);
 	appNodes.pauseBtnSVG.setAttribute('xlink:href', pauseBtnIcon);
 	appNodes.soundBtnSVG.setAttribute('href', soundBtnIcon);
